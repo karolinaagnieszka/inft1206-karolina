@@ -9,6 +9,7 @@ body {
   width: 500px;
   background-color: #efefef;
   margin: 0 auto;
+}
 
 h1 {
 color: darkslategrey;
@@ -22,17 +23,25 @@ font-style: italic;
 font-size: 1.5rem;
 
 }
-.jobtitle {
+.job-title {
     color:darkslategrey;
     font-weight: bold;
 }
 
-}
+
 ul {
 background-color: white;
 border: 5px solid purple;
 padding: 30px;
 border-radius: 20px;
+    }
 
+a {
+    color: green;
+}
 
+a:hover,
+a:focus {
+    color: darkgreen;
+    text-decoration: none;
 }
