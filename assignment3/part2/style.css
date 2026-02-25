@@ -17,18 +17,44 @@ font-size: 10px;
   box-sizing: border-box;
 }
 
+/*apply fonts to the page*/
 h1, h2 {
   font-family: 'Roboto Slab', serif;
-  font-weight: 700;
+  font-weight: 900;
 }
 body {
   font-family: 'Lora', serif;
   font-size: 1.6rem;
-  
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
+}
+
+
+/* General text styling*/
+body {
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
+}
+
+section h2 + p {
+  text-indent: 2rem;
 }
 
 /* Layout */
