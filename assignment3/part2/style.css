@@ -9,11 +9,22 @@ This file goes through CSS implementations
 
 General setup */
 
+html {
+font-size: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
 
+h1, h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
 body {
+  font-family: 'Lora', serif;
+  font-size: 1.6rem;
+  
   margin: 0 auto;
   padding: 0 20px;
   min-width: 980px;
