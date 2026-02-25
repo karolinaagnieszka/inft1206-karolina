@@ -57,6 +57,30 @@ section h2 + p {
   text-indent: 2rem;
 }
 
+/*Link styling */
+a:link,
+a:visited {
+  color: #aa6666;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #7d4b4b
+}
+
+a {
+  outline: none;
+}
+
+a[href*=http] {
+  background: url("https://mdn.github.io/shared-assets/images/examples/external-link-52.png")
+  no-repeat right center;
+  background-size: 1.2rem;
+  padding-right: 1.8rem;
+}
+
 /* Layout */
 
 main {
