@@ -2,7 +2,7 @@
 File: assignment3part3.html
 Date: 27 February 2026
 This file goes through fundamental
-layou comprehension with CSS
+layout comprehension with CSS
 */
 
 
@@ -38,9 +38,13 @@ img {
 nav {
   background-color: black;
   padding: 0.5em;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
