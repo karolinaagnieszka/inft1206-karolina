@@ -17,10 +17,9 @@ function randomValueFromArray(array) {
 }
 
 // Raw text strings
-const storyText = "It was 94 Fahrenheit outside, so :insertx: went for a 
-  walk. When they got to :inserty:, they stared in horror for a few moments, 
-  then :insertz:. Bob saw the whole thing, but was not surprised — :insertx:
-  weighs 300 pounds, and it was a hot day.";
+const storyText = `It was 94 Fahrenheit outside, so :insertx: went for a walk. When 
+they got to :inserty:, they stared in horror for a few moments, then :insertz:. 
+Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.`;
 
 const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 const insertY = ["the soup kitchen", "Disneyland", "the White House"];
@@ -43,28 +42,22 @@ function result() {
   newStory = newStory.replaceAll(":insertz:", zItem);
 
 
-}
-
-// Event listener and partial generate function definition
-
-generateBtn.addEventListener("click", generateStory);
-
-function generateStory() {
-  let newStory = returnRandomStoryString();
-
   if (customName.value !== "") {
     const name = customName.value;
-    newStory = newStory.replace("Bob", name);
+    newStory = newStory.replaceAll("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
     const weight = `${Math.round(300 / 14)} stone`;
-    const temperature = `${Math.round((94 - 32) * (5 / 9))} Celsius`;
-    newStory = newStory.replace("300 pounds", weight);
-    newStory = newStory.replace("94 Fahrenheit", temperature);
+    const temperature = `${Math.round((94 - 32) * 5 / 9)} centigrade`;
+
+    newStory = newStory.replaceAll("300 pounds", weight);
+    newStory = newStory.replaceAll("94 Fahrenheit", temperature);
   }
 
   // TODO: replace "" with the correct expression
   story.textContent = newStory;
   story.style.visibility = "visible";
 }
+
+generateBtn.addEventListener("click", result);
