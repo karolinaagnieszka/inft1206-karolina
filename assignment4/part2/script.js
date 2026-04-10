@@ -38,10 +38,6 @@ for (let i = 0; i < images.length; i++) {
 
 }
 
-function updateDisplayedImage(e) {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
-}
 
 btn.addEventListener("click", () => {
     const btnClass = btn.getAttribute("class");
