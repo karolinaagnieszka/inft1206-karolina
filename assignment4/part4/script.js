@@ -41,17 +41,7 @@ class Ball extends Shape {
     this.size = size;
     this.exists = true;
   }
-}
 
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
-    this.color = color;
-    this.size = size;
-  }
 
   draw() {
     ctx.beginPath();
@@ -94,7 +84,32 @@ class Ball {
       }
     }
   }
-  // …
+
+}
+
+class EvilCircle extends Shape {
+  constructor(x, y) {
+    super(x, y, 20, 20);
+    this.color = "white";
+    this.size = 10;
+    
+    window.addEventListener("keydown", (e) => {
+  switch (e.key) {
+    case "a":
+      this.x -= this.velX;
+      break;
+    case "d":
+      this.x += this.velX;
+      break;
+    case "w":
+      this.y -= this.velY;
+      break;
+    case "s":
+      this.y += this.velY;
+      break;
+  }
+});
+  }
 }
 
 const balls = [];
