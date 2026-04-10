@@ -15,15 +15,21 @@ this file includes
     <script defer src="index.js"></script>
   </head>
   <body>
-    We want your feedback!
+    <h1>We want your feedback!</h1>
 
-    We're very excited that you visited the little house in the woods,
-    and we want to hear what you thought of it! Please fill in the below
+    <p>
+      We're very excited that you visited the 
+     <a href="#">little house in the woods</a>, and we want to hear what you thought of it! Please fill in the below
     sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
+    if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
     to win prizes.
+    </p> 
 
-    --
+    <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" 
+    alt="">
+
+  <form>
+  <div class="form-section">
 
     <h2>Facilities</h2>
 
@@ -34,7 +40,8 @@ this file includes
       id="porridge-1"
       name="porridge"
       value="hot"
-      checked <label for="porridge-1">Too hot?</label>
+      checked> <label for="porridge-1">Too hot?</label>
+
       <input 
       type="radio"
       id="porridge-2"
@@ -45,8 +52,10 @@ this file includes
       id="porridge-3"
       name="porridge"
       value="right"> <label for="porridge-3">Just right?</label>
+
+      </fieldset>
   
-    </fieldset>
+    <fieldset>
       <legend>Were the beds</legend>
       <input 
       type="radio"
@@ -54,11 +63,12 @@ this file includes
       name="beds"
       value="hard"
       checked /><label for="beds-1">Too hard?</label>
+
       <input 
       type="radio"
       id="beds-2"
       name="beds"
-      value="right"/>
+      value="soft"/>
       <label for="beds-2">Too soft?</label>
 
       <input 
@@ -69,7 +79,7 @@ this file includes
       <label for="beds-3">Just right?</label>
       
 
-    <fieldset>
+    </fieldset>
 
     <fieldset>
       <legend>Describe the chairs (select all you agree with)</legend>
@@ -80,7 +90,7 @@ this file includes
       <label for="luxurious">Luxurious</label>
 
       <input type="checkbox" id="hi-tech" name="hi-tech">
-      <label for="high-tec">Hi-tech</label>
+      <label for="hi-tech">Hi-tech</label>
 
       <input type="checkbox" id="pretty" name="pretty">
       <label for="pretty">Pretty</label>
@@ -90,8 +100,8 @@ this file includes
 
     </fieldset>  
 
-    <div>
-      <div class="form-section">
+  </div> 
+    <div class="form-section">
         <h2>About your hosts</h2>
 
         <div class="separator">
@@ -124,7 +134,7 @@ this file includes
       <h2>Any other feedback?</h2>
 
       <label for="comments">Give us your comments</label>
-      <br>
+      <br />
       <textarea name="comments" id="comments"></textarea>
     </div>
 
@@ -142,7 +152,7 @@ this file includes
     <input type="email" id="email" name="email">
 
   </div>
-  <div class=" separator">
+  <div class="separator">
     <label for="phone">Phone</label>
     <input type="tel" id="phone" name="phone">
 
