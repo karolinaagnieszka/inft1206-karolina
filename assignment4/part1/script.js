@@ -32,14 +32,14 @@ const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewal
 function result() {
   let newStory = storyText;
 
-  const xItem = randomValueFromArray(insertX);
-  const yItem = randomValueFromArray(insertY);
-  const zItem = randomValueFromArray(insertZ);
+  const xitem = randomValueFromArray(insertX);
+  const yitem = randomValueFromArray(insertY);
+  const zitem = randomValueFromArray(insertZ);
 
 
-  newStory = newStory.replaceAll(":insertx:", xItem);
-  newStory = newStory.replaceAll(":inserty:", yItem);
-  newStory = newStory.replaceAll(":insertz:", zItem);
+  newStory = newStory.replaceAll(":insertx:", xitem);
+  newStory = newStory.replaceAll(":inserty:", yitem);
+  newStory = newStory.replaceAll(":insertz:", zitem);
 
 
   if (customName.value !== "") {
