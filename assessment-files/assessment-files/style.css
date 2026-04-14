@@ -14,6 +14,7 @@ body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
+  background-color: white;
 }
 
 /* || typography */
@@ -52,7 +53,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: ff80ff;
 }
 
 article, footer, .secondary {
