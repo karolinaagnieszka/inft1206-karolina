@@ -103,6 +103,7 @@ nav a {
 
 nav a:hover, nav a:focus {
   text-decoration: underline;
+  color: #000
 }
 
 nav .search {
@@ -119,14 +120,19 @@ nav .search {
 
 .search input[type="search"] {
   flex: 3;
+  font-size: 1.6rem;
+  height: 30px;
+  padding-left: 5px;
+  border: 1px solid #ccc;
 }
 
 .search input[type="submit"] {
   flex: 1;
-  margin-left: 1rem;
-  background: #eee;
+  margin-left: 0.5rem;
+  background: #333;
   border: 0;
   color: white;
+  height: 32px;
   cursor: pointer;
 }
 
@@ -136,36 +142,50 @@ main {
   display: flex;
 }
 
+
 article {
   flex: 5;
+  margin-right: 10px;
 }
 
 .secondary {
   flex: 2;
+  border-left: 1px solid #ccc;
 }
 
 footer {
   margin-top: 10px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
 }
 
 /* Table styling */
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #fff;
   border-collapse: collapse;
+  margin: 20px 0;
+}
+
+caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px;
 }
 
 th, td {
   padding: 10px;
+  border: 1px solid #ccc;
 }
 
 td {
   text-align: center;
 }
 
-th[scope="col"] {
-  border-bottom: 1px solid black;
+th {
+  background-color: #eee;
 }
 
 tbody tr:nth-child(odd) {
@@ -176,7 +196,7 @@ tbody tr:nth-child(odd) {
 
 img, audio {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 audio {
