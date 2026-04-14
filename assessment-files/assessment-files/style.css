@@ -57,8 +57,8 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: ff80ff;
+header, nav, article, footer, .secondary {
+  background-color: #f9f9f9;
 }
 
 article, footer, .secondary {
@@ -67,42 +67,48 @@ article, footer, .secondary {
 
 article {
   margin-right: 10px;
+  flex: 5;
 }
 
-div[class="nav"] {
-  height: 50px;
-  background-color: ff80ff;
+nav {
+  height: auto;
+  min-height: 50px;
+  background-color: #333;
   display: flex;
-  padding: 1% 0;
+  padding: 10px 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
-  display: inline;
+nav li {
+  display: inline ;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-div[class="nav"] .search {
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
+
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
-  height: 100%;
   padding: 0 2em;
 }
 
@@ -118,9 +124,10 @@ div[class="nav"] .search {
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
+  background: #eee;
   border: 0;
   color: white;
+  cursor: pointer;
 }
 
 /* || main layout */
