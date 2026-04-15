@@ -207,15 +207,16 @@ audio {
 
 .comments {
   background-color: #def;
-  padding: 10px;
+  padding: 20px;
 }
 
 .show-hide {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .comments font[size="6"]:nth-of-type(2) {
@@ -228,21 +229,29 @@ audio {
 
 .comment-form .flex-pair {
   display: flex;
-  padding: 0 3rem 1rem;
+  padding: 1rem 0;
 }
 
 .comment-form label {
-  align-self: center;
-  flex: 2;
+  padding-right: 15px;
+  flex: 1;
   text-align: right;
+  font-size: 1.6rem;
 }
 
 .comment-form input {
-  margin-left: 1rem;
-  flex: 6;
+  flex: 3;
 }
 
 .show-hide {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
   text-align: center;
   width: 150px;
 }
@@ -265,11 +274,14 @@ audio {
 }
 
 .comment-container {
-  margin-top: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .comment-container li {
-  list-style-type: none;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
   display: flex;
 }
 
